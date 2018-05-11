@@ -1,1 +1,12 @@
 #taskbar {
+  background-color:#008080;
+  position:sticky;
+}
+
+#taskbar-right {
+  float:right;
+}
+
+#taskbar-left {
+  float:left;
+}
