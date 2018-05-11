@@ -7,9 +7,11 @@
 }
 
 #taskbar-right {
+  margin-top:10px;
   float:right;
 }
 
 #taskbar-left {
+  margin-top:10px;
   float:left;
 }
