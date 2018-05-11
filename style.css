@@ -1,6 +1,9 @@
 #taskbar {
-  color:#008080;
+  color:teal;
   position:sticky;
+  height:100;
+  box-shadow:
+    0 -5px 2px teal;
 }
 
 #taskbar-right {
