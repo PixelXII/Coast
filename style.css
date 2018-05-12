@@ -3,7 +3,7 @@ p, h1, a, h2, h3 {
 }
 
 #taskbar {
-  background-color:teal;
+  background-color:#778899;
   position:sticky;
   height:60;
   box-shadow:
