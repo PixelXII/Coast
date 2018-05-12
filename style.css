@@ -5,6 +5,10 @@
   src: url(https://fonts.gstatic.com/s/materialicons/v37/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
+p, h1, a, h2, h3 {
+  font-family: 'Material';
+}
+
 #taskbar {
   background-color:teal;
   position:sticky;
