@@ -1,3 +1,11 @@
+/* 
+
+Theme is blue-grey and deep purple. 
+
+Blue-grey is #778899 and deep purple is #551a8b
+
+*/
+
 p, h1, a, h2, h3 {
   font-family: 'Roboto', monospace;
 }
@@ -11,7 +19,6 @@ p, h1, a, h2, h3 {
 }
 
 #taskbar-center {
-  color:green;
   font-size:24px;
 }
 
@@ -27,5 +34,5 @@ p, h1, a, h2, h3 {
 
 #out {
   font-size:24px;
-  color:teal;
+  color:#778899;
 }
