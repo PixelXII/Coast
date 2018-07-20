@@ -1,0 +1,175 @@
+@font-face {
+  				font-family: 'Lato';
+ 				font-style: normal;
+ 				font-weight: 400;
+  				src: local('Lato Regular'), local('Lato-Regular'), url(./lato.woff2) format('woff2');
+ 				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			
+			*{
+				font-family:'Lato';
+				font-size:18px;
+			}
+			
+			body {
+				background-color:slategrey;
+			}
+			
+			#colors {
+				height:50px;
+			}
+			
+			#sett {
+				float:right;
+				padding-right:20px;
+			}
+			
+			#prev {
+				width:32px;
+				height:32px;
+				border-radius:50%;
+				margin-top:4px;
+			}
+			
+			.profim {
+				border-radius:50%;
+				height:50px;
+				width:50px;
+				padding:2px;
+			}
+			
+			#purp {
+				margin-left:3px;
+			}
+			
+			.upload-btn-wrapper {
+ 				position: relative;
+ 				overflow: hidden;
+  				display: inline-block;
+			}
+
+			.btn {
+  				border: 2px solid gray;
+  				color: gray;
+  				padding: 8px 20px;
+  				border-radius: 8px;
+  				font-size: 20px;
+  				font-weight: bold;
+				margin:10px;
+			}
+
+			.upload-btn-wrapper input[type=file] {
+  				font-size: 100px;
+  				position: absolute;
+  				left: 0;
+  				top: 0;
+  				opacity: 0;
+			}
+			
+			#reset {
+				padding-top:25px;
+			}
+			
+			.setting {
+				margin-left:8px;
+			}
+			
+			.setting:hover {
+				text-decoration:underline;
+				cursor:pointer;
+			}
+			
+			#pcontainer {
+				height:10em;
+			}
+			
+			.color-selector {
+				width:32px;
+				height:32px;
+				margin:3px;
+				padding:2px;
+			}
+				
+			.color-selector:hover {
+				border:2px solid #E0E0E0;
+			}
+			
+			#settings {
+				float:left;
+				width:300px;
+				height:625px;
+				background-color:cornflowerblue;
+				box-shadow:-3px 5px 5px grey;
+				border-radius:3px;
+			}
+			
+			.top {
+				margin-top:55px;
+			}
+			
+			#confd {
+				display:none;
+				margin-top:40px;
+			}
+			
+			#description {
+				height:150px;
+			}
+			
+			#pimg {
+				height:10em;
+			}
+			
+			#desc {
+				cursor:pointer;
+				margin-top:40px;
+				margin-left:15px;
+				width:325;
+				padding-bottom:4px;
+			}
+			
+			input {
+				border:2px solid black;
+				border-radius:4px;
+				font-size:14px;
+				outline:none;
+				height:30px;
+			}
+			
+			#favorite-links {
+				margin-top:10px;
+			}
+			
+			.link {
+				padding:16px;
+				cursor:pointer;
+				border-radius:50%;
+				width:75px;
+				height:75px;
+			}
+				
+			#profile {
+				height:75px;
+				margin:12px;
+			}
+			
+			#namedisplay {
+				float:left;
+			}
+			
+			#profileimg {
+				border-radius:50%;
+				margin-right:10px;
+				width:75px;
+				float:left;
+				height:75px;
+			}
+			
+			#rightBar {
+				float:right;
+				background-color:cornflowerblue;
+				border-radius:3px;
+				width:350px;
+				height:625px;
+				box-shadow:-3px 5px 5px grey;
+			}
