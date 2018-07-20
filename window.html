@@ -1,4 +1,8 @@
 <html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
 	<body>
 		<div id="pass-screen" style="display:none;">
 			<div align="center">
@@ -42,9 +46,9 @@
 				</div>
 				
 				<div id="favorite-links">
-					<img class="link top" title="Google Search" onclick="window.open('https://google.com')" src="chrome.png">
-					<img class="link top" title="YouTube" onclick="window.open('https://www.youtube.com')" src="yo.png">
-					<img class="link top" title="Gmail" onclick="window.open('https://mail.google.com')" src="gmail.png">
+					<img class="link top" title="Google Search" onclick="window.open('https://google.com')" src="images/chrome.png">
+					<img class="link top" title="YouTube" onclick="window.open('https://www.youtube.com')" src="images/yo.png">
+					<img class="link top" title="Gmail" onclick="window.open('https://mail.google.com')" src="images/gmail.png">
 					<p id="message">&nbsp</p>
 				</div>
 				
@@ -64,9 +68,9 @@
 				
 				<div id="colors" style="display:none;">
 					<img class="color-selector" id="purp" onclick="document.body.style.backgroundColor = '#673AB7'; localStorage.bg = '#673AB7'" src="./purple.png">
-					<img class="color-selector" onclick="document.body.style.backgroundColor = '#3F51B5'; localStorage.bg = '#3F51B5'" src="./indigo.png">
-					<img class="color-selector" onclick="document.body.style.backgroundColor = '#607D8B'; localStorage.bg = '#607D8B'" src="./blue-grey.png">
-					<img class="color-selector" onclick="document.body.style.backgroundColor = '#009688'; localStorage.bg = '#009688'" src="./teal.png">
+					<img class="color-selector" onclick="document.body.style.backgroundColor = '#3F51B5'; localStorage.bg = '#3F51B5'" src="images/indigo.png">
+					<img class="color-selector" onclick="document.body.style.backgroundColor = '#607D8B'; localStorage.bg = '#607D8B'" src="images/blue-grey.png">
+					<img class="color-selector" onclick="document.body.style.backgroundColor = '#009688'; localStorage.bg = '#009688'" src="images/teal.png">
 				</div>
 			</div>
 			
@@ -107,186 +111,6 @@
 			<p class="setting" id="reset" onclick="if(confirm('Are you sure?') === true) { localStorage.clear(); location.reload() } ">Reset account</p>
 					
 		</div>
-			
-		<style>
-			
-			@font-face {
-  				font-family: 'Lato';
- 				font-style: normal;
- 				font-weight: 400;
-  				src: local('Lato Regular'), local('Lato-Regular'), url(./lato.woff2) format('woff2');
- 				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-			}
-			
-			*{
-				font-family:'Lato';
-				font-size:18px;
-			}
-			
-			body {
-				background-color:slategrey;
-			}
-			
-			#colors {
-				height:50px;
-			}
-			
-			#sett {
-				float:right;
-				padding-right:20px;
-			}
-			
-			#prev {
-				width:32px;
-				height:32px;
-				border-radius:50%;
-				margin-top:4px;
-			}
-			
-			.profim {
-				border-radius:50%;
-				height:50px;
-				width:50px;
-				padding:2px;
-			}
-			
-			#purp {
-				margin-left:3px;
-			}
-			
-			.upload-btn-wrapper {
- 				position: relative;
- 				overflow: hidden;
-  				display: inline-block;
-			}
-
-			.btn {
-  				border: 2px solid gray;
-  				color: gray;
-  				padding: 8px 20px;
-  				border-radius: 8px;
-  				font-size: 20px;
-  				font-weight: bold;
-				margin:10px;
-			}
-
-			.upload-btn-wrapper input[type=file] {
-  				font-size: 100px;
-  				position: absolute;
-  				left: 0;
-  				top: 0;
-  				opacity: 0;
-			}
-			
-			#reset {
-				padding-top:25px;
-			}
-			
-			.setting {
-				margin-left:8px;
-			}
-			
-			.setting:hover {
-				text-decoration:underline;
-				cursor:pointer;
-			}
-			
-			#pcontainer {
-				height:10em;
-			}
-			
-			.color-selector {
-				width:32px;
-				height:32px;
-				margin:3px;
-				padding:2px;
-			}
-				
-			.color-selector:hover {
-				border:2px solid #E0E0E0;
-			}
-			
-			#settings {
-				float:left;
-				width:300px;
-				height:625px;
-				background-color:cornflowerblue;
-				box-shadow:-3px 5px 5px grey;
-				border-radius:3px;
-			}
-			
-			.top {
-				margin-top:55px;
-			}
-			
-			#confd {
-				display:none;
-				margin-top:40px;
-			}
-			
-			#description {
-				height:150px;
-			}
-			
-			#pimg {
-				height:10em;
-			}
-			
-			#desc {
-				cursor:pointer;
-				margin-top:40px;
-				margin-left:15px;
-				width:325;
-				padding-bottom:4px;
-			}
-			
-			input {
-				border:2px solid black;
-				border-radius:4px;
-				font-size:14px;
-				outline:none;
-				height:30px;
-			}
-			
-			#favorite-links {
-				margin-top:10px;
-			}
-			
-			.link {
-				padding:16px;
-				cursor:pointer;
-				border-radius:50%;
-				width:75px;
-				height:75px;
-			}
-				
-			#profile {
-				height:75px;
-				margin:12px;
-			}
-			
-			#namedisplay {
-				float:left;
-			}
-			
-			#profileimg {
-				border-radius:50%;
-				margin-right:10px;
-				width:75px;
-				float:left;
-				height:75px;
-			}
-			
-			#rightBar {
-				float:right;
-				background-color:cornflowerblue;
-				border-radius:3px;
-				width:350px;
-				height:625px;
-				box-shadow:-3px 5px 5px grey;
-			}
-
-		</style>
 		
 		<script src="./script.js"></script>
 	</body>
