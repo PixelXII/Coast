@@ -42,30 +42,6 @@
 				margin-left:3px;
 			}
 			
-			.upload-btn-wrapper {
- 				position: relative;
- 				overflow: hidden;
-  				display: inline-block;
-			}
-
-			.btn {
-  				border: 2px solid gray;
-  				color: gray;
-  				padding: 8px 20px;
-  				border-radius: 8px;
-  				font-size: 20px;
-  				font-weight: bold;
-				margin:10px;
-			}
-
-			.upload-btn-wrapper input[type=file] {
-  				font-size: 100px;
-  				position: absolute;
-  				left: 0;
-  				top: 0;
-  				opacity: 0;
-			}
-			
 			#reset {
 				padding-top:25px;
 			}
@@ -80,7 +56,7 @@
 			}
 			
 			#pcontainer {
-				height:10em;
+				height:10opx;
 			}
 			
 			.color-selector {
@@ -117,7 +93,7 @@
 			}
 			
 			#pimg {
-				height:10em;
+				height:100px;
 			}
 			
 			#desc {
