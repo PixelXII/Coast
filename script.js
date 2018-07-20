@@ -11,7 +11,7 @@ if(localStorage.dev === '$_dev') {
 }
 
 setInterval(function() {
-	if(document.getElementById('home').style.display === 'block') {
+	if(document.getElementById('home').style.display === 'block' && name != undefined) {
 		document.title = localStorage.name+'\'s profile'
 	}
 }, 100)
