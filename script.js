@@ -9,6 +9,12 @@ if(localStorage.dev === '$_dev') {
 		document.getElementById('profileimg').src = 'images/dev.png'
 	}
 }
+
+setInterval(function() {
+	if(document.getElementById('home').style.display = 'block') {
+		document.title = localStorage.name+'\'s profile'
+	}
+}, 100)
 if(namee.innerText = "$_dev") {
 	namee.innerText = 'kia'
 }
