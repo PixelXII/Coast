@@ -151,6 +151,7 @@ function configDesc() {
 
 function passwordSetup() {
 	var pdiv = document.getElementById('password-setup')
+	document.getElementById('reset').style.display = 'none'
 	if(pdiv.style.display === 'none') {
 		pdiv.style.display = 'block'
 	} else {
