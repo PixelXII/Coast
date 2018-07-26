@@ -151,10 +151,11 @@ function configDesc() {
 
 function passwordSetup() {
 	var pdiv = document.getElementById('password-setup')
-	document.getElementById('reset').style.display = 'none'
 	if(pdiv.style.display === 'none') {
+		document.getElementById('reset').style.display = 'none'
 		pdiv.style.display = 'block'
 	} else {
+		document.getElementById('reset').style.display = 'block'
 		pdiv.style.display = 'none'
 	}
 	if(localStorage.pass != null) {
