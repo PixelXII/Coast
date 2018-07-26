@@ -233,7 +233,7 @@ function store() {
 			name = localStorage.name
 			document.getElementById('namedisplay').innerHTML = name
 			document.getElementById('first-screen').style.display = 'none'
-			if(localStorage.desc != null) {
+			if(localStorage.desc != undefined) {
 				description = localStorage.desc
 				document.getElementById('desc').innerHTML = localStorage.desc
 			}
