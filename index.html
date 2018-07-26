@@ -110,14 +110,6 @@
 			<p class="setting" id="reset" onclick="if(confirm('Are you sure?') === true) { localStorage.clear(); location.reload() } ">Reset account</p>
 					
 		</div>
-		<script type="text/javascript">
-			if(confirm('Are you sure you want to remove your password?') === true) { 
-				localStorage.removeItem('pass')
-				location.reload()
-			} else {
-				document.getElementById('password-setup').style.display = 'none'
-			}
-		</script>
 		<script src="./script.js"></script>
 	</body>
 </html>
