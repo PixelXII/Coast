@@ -91,7 +91,7 @@ function colors() {
 	}
 }
 
-function reset() {
+function resetPass() {
 	if(confirm('Are you sure you want to remove your password?') === true) { 
 		localStorage.removeItem('pass')
 		location.reload()
