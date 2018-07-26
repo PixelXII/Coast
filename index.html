@@ -98,10 +98,10 @@
 				<div id="password-setup" style="display:none;">
 					<div align="center" style="height:100;">
 						<br> <br>
+						<legend style="display:none;" class="setting" onclick="if(confirm('Are you sure you want to remove your password?')===true) { localStorage.removeItem('pass'); location.reload() } else { document.getElementById('password-setup').style.display = 'none' }" id="rem">Remove password</legend>
 						<legend id="setup">Enter your new password here:</legend> <br>
 						<input id="password" type="password">
 						<br> <br>
-						<legend style="display:none;" class="setting" onclick="if(confirm('Are you sure you want to remove your password?')===true) { localStorage.removeItem('pass'); location.reload() } else { document.getElementById('password-setup').style.display = 'none' }" id="rem">Remove password</legend>
 					</div>
 				</div>
 			</div>
