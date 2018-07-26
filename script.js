@@ -91,6 +91,14 @@ function colors() {
 	}
 }
 
+function reset() {
+	if(confirm('Are you sure you want to remove your password?') === true) { 
+		localStorage.removeItem('pass')
+		location.reload()
+	} else {
+		document.getElementById('password-setup').style.display = 'none'
+	}
+}
 
 function displaySettings() {
 	var sett = document.getElementById('settings')
