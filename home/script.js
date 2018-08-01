@@ -61,3 +61,12 @@ function configDesc() {
 		document.getElementById('confd').style.display = 'block'
 	}
 }
+
+function displaySettings() {
+	var sett = document.getElementById('settings')
+	if(sett.style.display === 'none') {
+		sett.style.display = 'block'
+	} else {
+		sett.style.display = 'none'
+	}
+}
