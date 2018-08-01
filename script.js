@@ -237,7 +237,7 @@ function enterPass() {
 
 function store() {
 	if(localStorage.length != 0) {
-		if(localStorage.pass != null) {
+		if(localStorage.pass != undefined) {
 			document.getElementById('home').style.display = 'none'
 			document.getElementById('first-screen').style.display = 'none'
 			document.getElementById('pass-screen').style.display = 'block'
