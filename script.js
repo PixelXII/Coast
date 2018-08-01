@@ -14,6 +14,11 @@ if(localStorage.dev === '$_dev') {
 		document.getElementById('profileimg').src = 'images/dev.png'
 	}
 }
+
+if(localStorage.name != 'undefined' && namee.innerText = 'undefined') {
+	document.getElementById('first-screen').style.display = 'block'
+}
+
 if(localStorage.home === true) {
 	location = './home/'
 }
