@@ -51,6 +51,11 @@ function changeImage() {
 	}
 }
 
+function reset() {
+	localStorage.clear()
+	location.reload()
+}
+
 function colors() {
 	var col = document.getElementById('colors')
 	if(col.style.display === 'none') {
