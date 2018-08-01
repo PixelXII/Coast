@@ -15,7 +15,7 @@ if(localStorage.dev === '$_dev') {
 	}
 }
 
-if(localStorage.name != 'undefined' && namee.innerText = 'undefined') {
+if(localStorage.name != 'undefined' && namee.innerText === 'undefined') {
 	document.getElementById('first-screen').style.display = 'block'
 }
 
