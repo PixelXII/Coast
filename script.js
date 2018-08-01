@@ -1,7 +1,6 @@
 const namee = document.getElementById('name')
 var name, description;
 var deeppurple = '#673AB7', indigo = '#3F51B5', teal = '#009688', bluegrey = '#607D8B';
-localStorage.home = false;
 var na;
 if(document.title.toString().includes('undefined')) {
 	localStorage.clear()
