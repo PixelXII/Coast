@@ -64,3 +64,33 @@ function displaySettings() {
 		sett.style.display = 'none'
 	}
 }
+
+function setPassword() {
+	var el = document.getElementById('password')
+	var password = btoa(el.value)
+	el.value = null
+	el = null
+	localStorage.pass = password
+	location.reload()
+}
+
+function passwordSetup() {
+	var pdiv = document.getElementById('password-setup')
+	if(pdiv.style.display === 'none') {
+		document.getElementById('reset').style.display = 'none'
+		pdiv.style.display = 'block'
+	} else {
+		document.getElementById('reset').style.display = 'block'
+		pdiv.style.display = 'none'
+	}
+	if(localStorage.pass != null) {
+		document.getElementById('setup').innerText = 'Change account password:'
+		document.getElementById('rem').style.display = 'block'
+	}
+	if(document.getElementById('pimg').style.display === 'block') {
+		document.getElementById('pimg').style.display = 'none'
+	}
+	if(document.getElementById('colors').style.display === 'block') {
+		document.getElementById('colors').style.display = 'none'
+	}
+}
