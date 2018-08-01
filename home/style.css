@@ -12,3 +12,8 @@
 #rightBar {
   float:right;
 }
+
+#profileimg {
+  width:75px;
+  height:75px;
+}
