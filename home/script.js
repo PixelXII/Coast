@@ -12,12 +12,6 @@ document.getElementById('desc').addEventListener('click', function() {
 	document.getElementById('link').style.display = 'none'
 });
 
-document.getElementById('password').addEventListener('keypress', function(e) {
-	if(e.keyCode === 13) {
-		setPassword()
-	}
-});
-
 function setProfile(img) {
 	document.getElementById('profileimg').src = 'images/'+img+'.png'
 	localStorage.profile = img
