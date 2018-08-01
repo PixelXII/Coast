@@ -4,12 +4,9 @@ var nameOut = document.getElementById('namedisplay')
 nameOut.innerText = localStorage.name
 profileImg.src = '../images/' + localStorage.profile + '.png'
 
-document.getElementById('desc').innerText = localStorage.desc
-
-document.getElementById('desc').addEventListener('click', function() {
-	configDesc()
-	document.getElementById('link').style.display = 'none'
-});
+if(typeof localStorage.desc != 'string') {
+	document.getElementById('desc').innerText = localStorage.desc
+}
 
 function setProfile(img) {
 	document.getElementById('profileimg').src = 'images/'+img+'.png'
