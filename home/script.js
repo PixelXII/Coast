@@ -47,3 +47,17 @@ document.getElementById('descIn').addEventListener('keypress', function(e) {
 		cf.value = ""
 	} 
 });
+
+var des;
+function configDesc() {
+	const desc = document.getElementById('desc')
+	desc.style.cursor = "default"
+	desc.style.display = 'none'
+	if(desc.innerHTML != 'No description provided') {
+		document.getElementById('confd').style.display = 'block'
+		document.getElementById('descnote').innerHTML = 'Edit description:'
+		document.getElementById('descIn').placeholder = localStorage.desc
+	} else {
+		document.getElementById('confd').style.display = 'block'
+	}
+}
