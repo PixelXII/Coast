@@ -1,6 +1,5 @@
 var profileImg = document.getElementById('profileimg')
 var nameOut = document.getElementById('namedisplay')
-localStorage.home = true
 
 nameOut.innerText = localStorage.name
 profileImg.src = '../images/' + localStorage.profile + '.png'
