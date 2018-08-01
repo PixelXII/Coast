@@ -32,30 +32,6 @@ if(namee.innerText = "$_dev") {
 	namee.innerText = 'kia'
 }
 
-namee.addEventListener('keypress', function(e) {
-	if(e.keyCode === 13) {
-		processName()
-	}
-});
-
-document.getElementById('descIn').addEventListener('keypress', function(e) {
-	const cf = document.getElementById('confd')
-	if(e.keyCode === 13) {
-		submitdesc()
-		document.getElementById('link').style.display = 'block'
-		cf.style.display = "none"
-		cf.value = ""
-	} 
-});
-
-/* document.getElementById('descIn').addEventListener('keypress', function(e) {
-	const cf = document.getElementById('confd')
-	if(e.keyCode === 27) {
-		cf.style.display = 'none'
-		cf.value = ''
-	}
-}); */
-
 function setProfile(img) {
 	document.getElementById('profileimg').src = 'images/'+img+'.png'
 	localStorage.profile = img
@@ -75,17 +51,6 @@ function changeImage() {
 		document.getElementById('colors').style.display = 'none'
 	}
 }
-
-document.getElementById('desc').addEventListener('click', function() {
-	configDesc()
-	document.getElementById('link').style.display = 'none'
-});
-
-document.getElementById('password').addEventListener('keypress', function(e) {
-	if(e.keyCode === 13) {
-		setPassword()
-	}
-});
 
 function colors() {
 	var col = document.getElementById('colors')
