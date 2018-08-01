@@ -23,6 +23,10 @@ body {
 	box-shadow:-3px 5px 5px grey;
 }
 
+p {
+	margin:8px;
+}
+
 .setting {
 	margin-left:8px;
 }
