@@ -4,10 +4,34 @@
 </head>
 
 <body>
-  <div class="up" style="position:sticky;" id="profile">
-     <img id="profim">
-     <h1 id="name"></h1>
-  </div>
+  <div id="rightBar">
+				<div id="profile">
+					<img id="profileimg" src="images/9.png">
+					<h3 id="namedisplay">&nbsp</h3> <br> <br>
+				</div>
+				<div id="description">
+					<p id="desc">No description provided</p>
+						<div id="confd">
+							<div align="center">
+								<br> <br>
+								<legend id="descnote">Enter a short description below:</legend> <br>
+								<textarea id="descIn" rows="5" col="10"></textarea>
+							</div>
+						</div>
+				</div>
+				
+				<p class="setting" onclick="location='./home/'" id="link">Go to homescreen</p>
+				
+				<div id="favorite-links">
+					<img class="link top" title="Google Search" onclick="window.open('https://google.com')" src="images/chrome.png">
+					<img class="link top" title="YouTube" onclick="window.open('https://www.youtube.com')" src="images/yo.png">
+					<img class="link top" title="Gmail" onclick="window.open('https://mail.google.com')" src="images/gmail.png">
+					<p id="message">&nbsp</p>
+				</div>
+				
+				<br>
+				<p id="sett" class="setting" onclick="displaySettings()">Settings</p>
+			</div>
   
   <script src="script.js"></script>
 </body>
