@@ -5,7 +5,7 @@ localStorage.home = true
 nameOut.innerText = localStorage.name
 profileImg.src = '../images/' + localStorage.profile + '.png'
 
-document.getElementById('desc').innerText = 
+document.getElementById('desc').innerText = localStorage.desc
 
 document.getElementById('desc').addEventListener('click', function() {
 	configDesc()
