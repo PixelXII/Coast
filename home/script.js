@@ -1,10 +1,11 @@
-var profile = document.getElementById('profile')
-var profileImg = document.getElementById('profim')
-var nameOut = document.getElementById('name')
+var profileImg = document.getElementById('profileimg')
+var nameOut = document.getElementById('namedisplay')
 localStorage.home = true
 
 nameOut.innerText = localStorage.name
 profileImg.src = '../images/' + localStorage.profile + '.png'
+
+document.getElementById('desc').innerText = 
 
 document.getElementById('desc').addEventListener('click', function() {
 	configDesc()
