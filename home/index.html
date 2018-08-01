@@ -5,73 +5,10 @@
 
 <body>
   <div id="rightBar" class="sidebar">
-	  <div id="profile">
-		  <img id="profileimg" src="images/9.png">
-		  <h3 id="namedisplay">&nbsp</h3> <br> <br>
-	  </div>
-	  <div id="description">
-		  <p id="desc">No description provided</p>
-		  <div id="confd" style="display:none;">
-			  <div align="center">
-				  <br> <br>
-				  <legend id="descnote">Enter a short description below:</legend> <br>
-				  <textarea id="descIn" rows="5" col="10"></textarea>
-			  </div>
-		  </div>
-	  </div>
-	  <br> <br> <br> <br>
-	  <p id="sett" class="setting" onclick="displaySettings()">Settings</p>
-	</div>
-	
-	<div id="settings" style="display:none;" class="sidebar">
-			<div style="height:75px;">
-				<p class="setting" onclick="colors()">Background Color</p>
-				
-				<div id="colors" style="display:none;">
-					<img class="color-selector" id="purp" onclick="document.body.style.backgroundColor = '#673AB7'; localStorage.bg = '#673AB7'" src="images/purple.png">
-					<img class="color-selector" onclick="document.body.style.backgroundColor = '#3F51B5'; localStorage.bg = '#3F51B5'" src="images/indigo.png">
-					<img class="color-selector" onclick="document.body.style.backgroundColor = '#607D8B'; localStorage.bg = '#607D8B'" src="images/blue-grey.png">
-					<img class="color-selector" onclick="document.body.style.backgroundColor = '#009688'; localStorage.bg = '#009688'" src="images/teal.png">
-				</div>
-			</div>
-			
-			<div style="height:300px;">
-				<p class="setting" onclick="changeImage()">Change profile image</p>
-			
-				<div id="pimg" style="display:none;">
-					<img src="../images/1.png" onclick="setProfile(1)" class="profim">
-					<img src="../images/2.png" onclick="setProfile(2)" class="profim">
-					<img src="../images/3.png" onclick="setProfile(3)" class="profim">
-					<img src="../images/4.png" onclick="setProfile(4)" class="profim">
-					<img src="../images/5.png" onclick="setProfile(5)" class="profim">
-					<img src="../images/6.png" onclick="setProfile(6)" class="profim">
-					<img src="../images/7.png" onclick="setProfile(7)" class="profim">
-					<img src="../images/8.png" onclick="setProfile(8)" class="profim">
-					<img src="../images/9.png" onclick="setProfile(9)" class="profim">
-					<img src="../images/10.png" onclick="setProfile(10)" class="profim">
-					<img src="../images/11.png" onclick="setProfile(11)" class="profim">
-					<img src="../images/12.png" onclick="setProfile(12)" class="profim">
-				</div>
-			</div>
-			
-			<div id="pcontainer">
-				<p class="setting" id='passet' onclick="passwordSetup()">Set up account password</p>
-			
-				<div id="password-setup" style="display:none;">
-					<div align="center" style="height:100;">
-						<br> <br>
-						<legend style="display:none;" class="setting" onclick="reset()" id="rem">Remove password</legend>
-						<legend id="setup">Enter your new password here:</legend> <br>
-						<input id="password" type="password">
-						<br> <br>
-					</div>
-				</div>
-			</div>
-				
-			<br> <br>
-			<p class="setting" id="reset" onclick="if(confirm('Are you sure?') === true) { localStorage.clear(); location = '../' } ">Reset account</p>
-					
-		</div>
+	  <img id="profileimg" src="images/9.png">
+	  <h3 id="namedisplay">&nbsp</h3> <br> <br>
+	  <p id="desc">No description provided</p>
+  </div>
   
   <script src="script.js"></script>
 </body>
