@@ -1,6 +1,6 @@
 var posts = []
 var title, content;
-localStorage.pc = null
+localStorage.pc = ""
 function Post(title, content) {
   if(title === undefined) {
     throw new Error('TITLE is undefined')
