@@ -34,9 +34,9 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
     		posts.push(np)
 		var index = document.querySelectorAll('.postcard')[posts.indexOf(np)]
 		if(pi === undefined) {
-			pi = index + '\\split'
+			pi = index.outerHTML + '\\split'
 		} else {
-			pi = pi + index + '\\split'
+			pi = pi + index.outerHTML + '\\split'
 		}
 		console.log(pi)
 		document.getElementById('postD').style.display = 'none'
