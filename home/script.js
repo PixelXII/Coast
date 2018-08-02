@@ -5,6 +5,7 @@ document.body.style.backgroundColor = localStorage.bg
 document.title = 'Homepage for '+localStorage.name;
 
 nameOut.innerText = localStorage.name
+document.getElementById('desc').innerText = localStorage.desc
 profileImg.src = '../images/' + localStorage.profile + '.png'
 
 function setProfile(img) {
