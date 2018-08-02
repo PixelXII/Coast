@@ -39,3 +39,4 @@ function showPost() {
 		c.style.display = 'block'
 	}
 }
+
