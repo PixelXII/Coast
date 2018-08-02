@@ -30,4 +30,4 @@ document.getElementById('content').addEventListener('keypress', function(e) {
     var np = new Post(title, content)
     posts.push(np)
   }
-}
+});
