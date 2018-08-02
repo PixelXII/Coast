@@ -32,16 +32,10 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 		document.getElementById('title').value = ""
    		var np = new Post(title, content)
     		posts.push(np)
-		setTimeout(function() {
-			posts.forEach(function(e) {
-				var t = document.querySelectorAll('.postcard')[posts.indexOf(e)].outerHTML
-				if(localStorage.pc === undefined) {
-					localStorage.pc = t.outerHTML + '\\split'
-				} else {
-					localStorage.pc = localStorage.pc + t.outerHTML + '\\split'
-				}
-			});
-		}, 10)
+		var index = document.querySelectorAll('.postcard')[posts.indexOf(np)]
+		
+		console.log(index)
+		
 		document.getElementById('postD').style.display = 'none'
 		document.getElementById('content').style.display = 'block'
   	}
