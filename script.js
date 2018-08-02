@@ -9,6 +9,10 @@ if(document.title.toString().includes('undefined')) {
 	location.reload()
 }
 
+if(localStorage.name != 'undefined' && namee.innerText === 'undefined') {
+	document.getElementById('first-screen').style.display = 'block'
+}
+
 setInterval(function() {
 	if(document.getElementById('home').style.display === 'block' && name != undefined) {
 		document.title = localStorage.name+'\'s profile'
