@@ -6,45 +6,12 @@ if(document.title.toString().includes('undefined')) {
 	localStorage.clear()
 	location.reload()
 }
-if(localStorage.dev === '$_dev') {
-	dev()
-	if(localStorage.profile != undefined) {
-		localStorage.profile = 'dev'
-		document.getElementById('profileimg').src = 'images/dev.png'
-	}
-}
 
 setInterval(function() {
 	if(document.getElementById('home').style.display === 'block' && name != undefined) {
 		document.title = localStorage.name+'\'s profile'
 	}
 }, 100)
-if(namee.innerText = "$_dev") {
-	namee.innerText = 'kia'
-}
-
-namee.addEventListener('keypress', function(e) {
-	if(e.keyCode === 13) {
-		processName()
-	}
-});
-
-document.getElementById('descIn').addEventListener('keypress', function(e) {
-	const cf = document.getElementById('confd')
-	if(e.keyCode === 13) {
-		submitdesc()
-		cf.style.display = "none"
-		cf.value = ""
-	} 
-});
-
-document.getElementById('descIn').addEventListener('keypress', function(e) {
-	const cf = document.getElementById('confd')
-	if(e.keyCode === 27) {
-		cf.style.display = 'none'
-		cf.value = ''
-	}
-});
 
 function setProfile(img) {
 	document.getElementById('profileimg').src = 'images/'+img+'.png'
@@ -65,16 +32,6 @@ function changeImage() {
 		document.getElementById('colors').style.display = 'none'
 	}
 }
-
-document.getElementById('desc').addEventListener('click', function() {
-	configDesc()
-});
-
-document.getElementById('password').addEventListener('keypress', function(e) {
-	if(e.keyCode === 13) {
-		setPassword()
-	}
-});
 
 function colors() {
 	var col = document.getElementById('colors')
@@ -106,6 +63,13 @@ function displaySettings() {
 		sett.style.display = 'block'
 	} else {
 		sett.style.display = 'none'
+	}
+}
+
+function reset() {
+	if(confirm("Are you sure you want to delete all data?")) {
+		localStorage.clear()
+		location.reload()
 	}
 }
 
