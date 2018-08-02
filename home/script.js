@@ -1,5 +1,6 @@
 var profileImg = document.getElementById('profileimg')
 var nameOut = document.getElementById('namedisplay')
+document.style.backgroundColor = localStorage.bg
 
 document.title = 'Homepage for '+localStorage.name;
 
