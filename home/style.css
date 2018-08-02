@@ -21,6 +21,7 @@
   float:right;
   height:50%;
   position:sticky;
+  margin-top:16px;
 }
 
 input {
