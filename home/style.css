@@ -23,6 +23,21 @@
   position:sticky;
 }
 
+input {
+  border:2px solid black;
+  border-radius:4px;
+  font-size:14px;
+  outline:none;
+  height:30px;
+}
+
+textarea {
+  border:2px solid black;
+  border-radius:4px;
+  font-size:14px;
+  outline:none;
+}
+
 #profileimg {
   width:75px;
   height:75px;
