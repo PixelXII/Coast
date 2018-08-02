@@ -1,6 +1,5 @@
 var posts = []
 var title, content;
-localStorage.pc = ""
 var pi = localStorage.pc
 function Post(title, content) {
   if(title === undefined) {
@@ -36,7 +35,11 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 		setTimeout(function() {
 			posts.forEach(function(e) {
 				var t = document.querySelectorAll('.postcard')[posts.indexOf(e)].outerHTML
-				localStorage.pc = localStorage.pc + t.outerHTML + '\\split'
+				if(localStorage.pc === undefined) {
+					localStorage.pc = t.outerHTML + '\\split'
+				} else {
+					localStorage.pc = localStorage.pc + t.outerHTML + '\\split'
+				}
 			});
 		}, 10)
 		document.getElementById('postD').style.display = 'none'
