@@ -3,7 +3,7 @@ function Post(title, content) {
   this.content = content
   var post = document.createElement('div')
   document.getElementById('content').appendChild(post)
-  post.innerHTML = "<h2 class='title'>"+title+"</h2> <br> <p id='content'>"+content+"</p>"
+  post.innerHTML = "<h2 class='title'>"+this.title+"</h2> <br> <p id='content'>"+this.content+"</p>"
 }
 
 Post.prototype.edit = function() {
