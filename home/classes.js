@@ -21,3 +21,8 @@ Post.prototype.edit = function() {
   
   // but i leave it here to remind me that i *want* to add it
 }
+
+function createPost(title, content) {
+  var np = new Post(title, content)
+  posts.push(np)
+}
