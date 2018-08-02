@@ -2,7 +2,7 @@ var posts = []
 var title, content, arr;
 var pi = localStorage.pc
 if(pi === undefined) {
-	pi = "<div class='postcard'><h2 class='title'>My first post!</h2><p class='content'>Wow...</p></div>"
+	pi = "<div class='postcard'><h2 class='title'>"+localStorage.name+"\'s first post!</h2><p class='content'>Wow...</p></div>"
 }
 function Post(title, content) {
   if(title === undefined) {
