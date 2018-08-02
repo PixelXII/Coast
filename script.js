@@ -8,22 +8,6 @@ if(document.title.toString().includes('undefined')) {
 	location.reload()
 }
 
-if(localStorage.dev === '$_dev') {
-	dev()
-	if(localStorage.profile != undefined) {
-		localStorage.profile = 'dev'
-		document.getElementById('profileimg').src = 'images/dev.png'
-	}
-}
-
-if(localStorage.name != 'undefined' && namee.innerText === 'undefined') {
-	document.getElementById('first-screen').style.display = 'block'
-}
-
-if(localStorage.home === true) {
-	location = './home/'
-}
-
 setInterval(function() {
 	if(document.getElementById('home').style.display === 'block' && name != undefined) {
 		document.title = localStorage.name+'\'s profile'
@@ -89,18 +73,6 @@ function displaySettings() {
 	} else {
 		sett.style.display = 'none'
 	}
-}
-
-function dev() {
-	document.getElementById('desc').innerHTML = "I am your creator."
-	localStorage.desc = "I am your creator."
-	localStorage.name = "kia"
-	localStorage.dev = '$_dev'
-	document.getElementById('profileimg').src = "images/dev.png"
-	document.getElementById('passet').style.display = 'none'
-	document.getElementById('pcontainer').style.display = 'none'
-	localStorage.pass = 'QW5pbWUgcm9ja3M='
-	removeEventListener('click', document.getElementById('desc'))
 }
 
 function processName() {
