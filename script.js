@@ -8,6 +8,15 @@ if(document.title.toString().includes('undefined')) {
 	location.reload()
 }
 
+setInterval(function() {
+	if(document.getElementById('home').style.display === 'block' && name != undefined) {
+		document.title = localStorage.name+'\'s profile'
+	}
+}, 100)
+if(namee.innerText = "$_dev") {
+	namee.innerText = 'kia'
+}
+
 function setProfile(img) {
 	document.getElementById('profileimg').src = 'images/'+img+'.png'
 	localStorage.profile = img
@@ -73,10 +82,13 @@ function processName() {
 		document.getElementById('error').innerHTML = "that name is too short"
 		return;
 	} else {
+		if(name === '$_dev') {
+			document.getElementById('namedisplay').innerText = "kia"
+			dev()
+		}
 		document.getElementById('first-screen').style.display = 'none'
 		document.getElementById('home').style.display = 'block'
 		localStorage.name = name
-		document.title = localStorage.name + '\'s profile'
 		startHome()
 	}
 }
