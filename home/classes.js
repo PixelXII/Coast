@@ -2,6 +2,7 @@ function Post(title, content) {
   this.title = title
   this.content = content
   var post = document.createElement('div')
+  post.className = 'postcard'
   document.getElementById('content').appendChild(post)
   post.innerHTML = "<h2 class='title'>"+this.title+"</h2> <br> <p id='content'>"+this.content+"</p>"
 }
