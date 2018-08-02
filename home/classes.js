@@ -47,6 +47,7 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 
 document.onload = function() {
 	posts = localStorage.pc.split('\split')
+	console.log(posts)
 	posts.forEach(function(e) {
 		let p = document.createElement('div')
 		document.getElementById('content').appendChild(p)
