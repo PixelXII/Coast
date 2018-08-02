@@ -60,4 +60,5 @@ function load() {
 		});
 	}
 }
-				
+
+load()
