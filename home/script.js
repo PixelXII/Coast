@@ -27,3 +27,12 @@ function changeImage() {
 		document.getElementById('colors').style.display = 'none'
 	}
 }
+
+function showPost() {
+	var p = document.getElementById('postD').style.display
+	if(p === 'none') {
+		p = 'block'
+	} else {
+		p = 'none'
+	}
+}
