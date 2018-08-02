@@ -37,6 +37,7 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 			pi = index.outerHTML + '\\split'
 		} else {
 			pi = pi + index.outerHTML + '\\split'
+			pi = pi.slice(pi.indexOf('<div'))
 		}
 		console.log(pi)
 		document.getElementById('postD').style.display = 'none'
