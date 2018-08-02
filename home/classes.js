@@ -6,7 +6,7 @@ function Post(title, content) {
   post.className = 'postcard'
   document.getElementById('content').appendChild(post)
   post.innerHTML = "<h2 class='title'>"+this.title+"</h2> <br> <p class='content'>"+this.content+"</p>"
-  posts.push(post)
+  posts.push(post.outerHTML)
 }
 
 Post.prototype.edit = function() {
