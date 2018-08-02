@@ -37,9 +37,8 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 });
 
 document.onunload = function() {
-	localStorage.pc = []
 	for(var i = 0; i <= posts.length; i++) {
-		localStorage.pc.push(document.querySelectorAll('.postcard')[i].outerHTML)
+		localStorage.pc = document.querySelectorAll('.postcard')[i].outerHTML + '???'
 	}
 }
 		
