@@ -1,5 +1,5 @@
 var posts = []
-var title, content;
+var title, content, arr;
 var pi = localStorage.pc
 function Post(title, content) {
   if(title === undefined) {
@@ -34,9 +34,9 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
     		posts.push(np)
 		var index = document.querySelectorAll('.postcard')[posts.indexOf(np)]
 		if(pi === undefined) {
-			pi = index.outerHTML + '\\split'
+			pi = index.outerHTML + '/split'
 		} else {
-			pi = pi + index.outerHTML + '\\split'
+			pi = pi + index.outerHTML + '/split'
 			pi = pi.slice(pi.indexOf('<div'))
 		}
 		console.log(pi)
@@ -47,9 +47,9 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 
 function load() {
 	if(pi.includes('undefined') === false) {
-		var arr = pi.split('\split')
+		arr = pi.split('/split')
 		arr.forEach(function(e) {
-			if(e.includes('undefined') === false || e.includes('\\') === false || e.includes('split') === false) {
+			if(e.includes('undefined') === false || e.includes('/') === false || e.includes('split') === false) {
 				var p = document.createElement('div')
 				document.getElementById('content').appendChild(p)
 				p.outerHTML = e
