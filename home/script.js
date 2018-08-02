@@ -3,13 +3,6 @@ var nameOut = document.getElementById('namedisplay')
 
 document.title = 'Homepage for '+localStorage.name;
 
-var complement = 0xffffff ^ localStorage.bg
-
-var all = document.getElementsByClassName('postcard');
-for (var i = 0; i < all.length; i++) {
-  all[i].style.backgroundColor = complement;
-}
-
 nameOut.innerText = localStorage.name
 profileImg.src = '../images/' + localStorage.profile + '.png'
 
