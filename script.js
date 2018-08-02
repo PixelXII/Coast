@@ -10,7 +10,7 @@ if(document.title.toString().includes('undefined')) {
 	location.reload()
 }
 
-if(localStorage.name != 'undefined' && namee.innerText === 'undefined') {
+if(namee.innerText === 'undefined') {
 	document.getElementById('first-screen').style.display = 'block'
 }
 
