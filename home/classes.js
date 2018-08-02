@@ -33,7 +33,7 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
     		posts.push(np)
 		posts.forEach(function(e) {
 			var t = document.querySelectorAll('.postcard')[posts.indexOf(e)]
-			console.log(t.toString())
+			console.log('"'+t+'"')
 		});
 		document.getElementById('postD').style.display = 'none'
 		document.getElementById('content').style.display = 'block'
