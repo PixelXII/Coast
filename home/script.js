@@ -33,10 +33,14 @@ function showPost() {
 	var c = document.querySelectorAll('.postcard')
 	if(p.style.display === 'none') {
 		p.style.display = 'block'
-		c.style.display = 'none'
+		for(var i = 0; i <= c.length; i++) {
+			c[i].style.display = 'none'
+		}
 	} else {
 		p.style.display = 'none'
-		c.style.display = 'block'
+		for(var i = 0; i <= c.length; i++) {
+			c[i].style.display = 'block'
+		}
 	}
 }
 
