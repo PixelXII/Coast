@@ -3,7 +3,7 @@ var nameOut = document.getElementById('namedisplay')
 
 document.title = 'Homepage for '+localStorage.name;
 
-var complement = 0xffffff ^ localStorage.bg.replace('#', '');
+var complement = 0xffffff ^ localStorage.bg.toString().replace('#', '');
 
 var all = document.getElementsByClassName('postcard');
 for (var i = 0; i < all.length; i++) {
