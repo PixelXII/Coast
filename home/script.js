@@ -29,13 +29,13 @@ function changeImage() {
 }
 
 function showPost() {
-	var p = document.getElementById('postD').style.display
-	var c = document.getElementById('content').style.display
-	if(p === 'none') {
-		p = 'block'
-		c = 'none'
+	var p = document.getElementById('postD')
+	var c = document.getElementById('content')
+	if(p.style.display === 'none') {
+		p.style.display = 'block'
+		c.style.display = 'none'
 	} else {
-		p = 'none'
-		c = 'block'
+		p.style.display = 'none'
+		c.style.display = 'block'
 	}
 }
