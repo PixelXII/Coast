@@ -6,10 +6,6 @@ document.title = 'Homepage for '+localStorage.name;
 nameOut.innerText = localStorage.name
 profileImg.src = '../images/' + localStorage.profile + '.png'
 
-if(typeof localStorage.desc != 'string') {
-	document.getElementById('desc').innerText = localStorage.desc
-}
-
 function setProfile(img) {
 	document.getElementById('profileimg').src = 'images/'+img+'.png'
 	localStorage.profile = img
