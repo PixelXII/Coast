@@ -34,7 +34,7 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
     		posts.push(np)
 		posts.forEach(function(e) {
 			var t = document.querySelectorAll('.postcard')[posts.indexOf(e)].outerHTML
-			localStorage.pc = localStorage.pc + t + '\\split'
+			localStorage.pc = localStorage.pc + t.outerHTML + '\\split'
 		});
 		document.getElementById('postD').style.display = 'none'
 		document.getElementById('content').style.display = 'block'
