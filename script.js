@@ -43,8 +43,10 @@ function changeImage() {
 }
 
 function reset() {
-	localStorage.clear()
-	location.reload()
+	if(confirm('Are you sure you want to clear all data?')) {
+		localStorage.clear()
+		location.reload()
+	}
 }
 
 function colors() {
