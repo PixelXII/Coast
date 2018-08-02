@@ -30,9 +30,12 @@ function changeImage() {
 
 function showPost() {
 	var p = document.getElementById('postD').style.display
+	var c = document.getElementById('content').style.display
 	if(p === 'none') {
 		p = 'block'
+		c = 'none'
 	} else {
 		p = 'none'
+		c = 'block'
 	}
 }
