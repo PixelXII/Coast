@@ -1,11 +1,17 @@
 var posts = []
 function Post(title, content) {
-  this.title = title
-  this.content = content
-  var post = document.createElement('div')
-  post.className = 'postcard'
-  document.getElementById('content').appendChild(post)
-  post.innerHTML = "<h2 class='title'>"+this.title+"</h2> <br> <p class='content'>"+this.content+"</p>"
+  if(title === undefined) {
+    throw new Error('TITLE is undefined')
+  } else if(content === undefined) {
+    throw new Error('CONTENT is undefined')
+  } else {
+    this.title = title
+    this.content = content
+    var post = document.createElement('div')
+    post.className = 'postcard'
+    document.getElementById('content').appendChild(post)
+    post.innerHTML = "<h2 class='title'>"+this.title+"</h2> <br> <p class='content'>"+this.content+"</p>"
+  }
 }
 
 Post.prototype.edit = function() {
