@@ -3,23 +3,9 @@ var name, description;
 var deeppurple = '#673AB7', indigo = '#3F51B5', teal = '#009688', bluegrey = '#607D8B';
 var na;
 localStorage.desc = "No description provided"
-localStorage.profile = 9
 if(document.title.toString().includes('undefined')) {
 	localStorage.clear()
 	location.reload()
-}
-
-if(localStorage.name != 'undefined' && namee.innerText === 'undefined') {
-	document.getElementById('first-screen').style.display = 'block'
-}
-
-setInterval(function() {
-	if(document.getElementById('home').style.display === 'block' && name != undefined) {
-		document.title = localStorage.name+'\'s profile'
-	}
-}, 100)
-if(namee.innerText = "$_dev") {
-	namee.innerText = 'kia'
 }
 
 function setProfile(img) {
@@ -43,10 +29,8 @@ function changeImage() {
 }
 
 function reset() {
-	if(confirm('Are you sure you want to clear all data?')) {
-		localStorage.clear()
-		location.reload()
-	}
+	localStorage.clear()
+	location.reload()
 }
 
 function colors() {
@@ -89,13 +73,10 @@ function processName() {
 		document.getElementById('error').innerHTML = "that name is too short"
 		return;
 	} else {
-		if(name === '$_dev') {
-			document.getElementById('namedisplay').innerText = "kia"
-			dev()
-		}
 		document.getElementById('first-screen').style.display = 'none'
 		document.getElementById('home').style.display = 'block'
 		localStorage.name = name
+		document.title = localStorage.name + '\'s profile'
 		startHome()
 	}
 }
