@@ -73,18 +73,6 @@ function reset() {
 	}
 }
 
-function dev() {
-	document.getElementById('desc').innerHTML = "I am your creator."
-	localStorage.desc = "I am your creator."
-	localStorage.name = "kia"
-	localStorage.dev = '$_dev'
-	document.getElementById('profileimg').src = "images/dev.png"
-	document.getElementById('passet').style.display = 'none'
-	document.getElementById('pcontainer').style.display = 'none'
-	localStorage.pass = 'QW5pbWUgcm9ja3M='
-	removeEventListener('click', document.getElementById('desc'))
-}
-
 function processName() {
 	name = document.getElementById('name').value
 	if(name.length < 2) {
@@ -92,10 +80,6 @@ function processName() {
 		document.getElementById('error').innerHTML = "that name is too short"
 		return;
 	} else {
-		if(name === '$_dev') {
-			document.getElementById('namedisplay').innerText = "kia"
-			dev()
-		}
 		document.getElementById('first-screen').style.display = 'none'
 		document.getElementById('home').style.display = 'block'
 		localStorage.name = name
