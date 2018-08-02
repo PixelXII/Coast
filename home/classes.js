@@ -30,5 +30,6 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
    		var np = new Post(title, content)
     		posts.push(np)
 		document.getElementById('postD').style.display = 'none'
+		document.getElementById('content').style.display = 'block'
   	}
 });
