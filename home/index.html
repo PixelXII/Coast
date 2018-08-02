@@ -8,10 +8,18 @@
 		<img id="profileimg" src="../images/9.png">
 		<h3 id="namedisplay">&nbsp</h3> <br> <br>
 		<p id="desc">No description provided</p> <br> <br> <br>
-		<p class='setting' style="float:right;" onclick="createPost()">Post</p>
+		<p class='setting' style="float:right;" onclick="showPost()">Post</p>
 	</div>
 	
 	<div id="content" align="center"></div>
+	
+	<div id="postD">
+		<legend>What should the title of the post be?</legend> <br>
+		<input id="title" type="text"> <br> <br>
+		<legend>What should the body of your post say?</legend> <br>
+		<textarea rows="5" cols="6" id="content"></textarea>
+	</div>
+	
 	<script src="script.js"></script>
 	<script src="classes.js"></script>
 </body>
