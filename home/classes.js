@@ -29,5 +29,6 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
     		content = document.getElementById('pcon').value
    		var np = new Post(title, content)
     		posts.push(np)
+		document.getElementById('postD').style.display = 'none'
   	}
 });
