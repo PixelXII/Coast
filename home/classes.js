@@ -27,6 +27,8 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 	if(e.keyCode === 13) {
 		title = document.getElementById('title').value
     		content = document.getElementById('pcon').value
+		document.getElementById('pcon').value = ""
+		document.getElementById('title').value = ""
    		var np = new Post(title, content)
     		posts.push(np)
 		document.getElementById('postD').style.display = 'none'
