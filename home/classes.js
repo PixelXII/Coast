@@ -38,8 +38,16 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 
 document.onunload = function() {
 	for(var i = 0; i <= posts.length; i++) {
-		localStorage.pc = document.querySelectorAll('.postcard')[i].outerHTML + '???'
+		localStorage.pc = document.querySelectorAll('.postcard')[i].outerHTML + '\split'
 	}
 }
-		
+
+document.onload = function() {
+	posts = localStorage.pc.split('\split')
+	posts.forEach(function(e) {
+		let p = document.createElement('div')
+		document.getElementById('content').appendChild(p)
+		p.outerHTML = e
+	})
+}
 		
