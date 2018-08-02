@@ -12,6 +12,7 @@
 #rightBar {
   float:right;
   height:50%;
+  position:sticky;
 }
 
 #profileimg {
