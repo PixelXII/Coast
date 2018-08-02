@@ -23,11 +23,11 @@ Post.prototype.edit = function() {
   // but i leave it here to remind me that i *want* to add it
 }
 
-document.getElementById('content').addEventListener('keypress', function(e) {
+document.getElementById('pcon').addEventListener('keypress', function(e) {
 	if(e.keyCode === 13) {
 		title = document.getElementById('title').value
-    content = document.getElementById('content').value
-    var np = new Post(title, content)
-    posts.push(np)
-  }
+    		content = document.getElementById('pcon').value
+   		var np = new Post(title, content)
+    		posts.push(np)
+  	}
 });
