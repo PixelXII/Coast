@@ -35,3 +35,12 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
 		document.getElementById('content').style.display = 'block'
   	}
 });
+
+document.onunload = function() {
+	localStorage.pc = []
+	for(var i = 0; i <= posts.length; i++) {
+		localStorage.pc.push(document.querySelectorAll('.postcard')[i].outerHTML)
+	}
+}
+		
+		
