@@ -45,13 +45,16 @@ document.getElementById('pcon').addEventListener('keypress', function(e) {
   	}
 });
 
-document.onload = function() {
-	var wee = localStorage.pc.split('\split')
-	console.log(wee)
-	posts.forEach(function(e) {
-		let p = document.createElement('div')
-		document.getElementById('content').appendChild(p)
-		p.outerHTML = e
-	})
+function load() {
+	if(pi.includes('undefined') === false) {
+		var arr = pi.split('\split')
+		arr.forEach(function(e) {
+			if(e.includes('undefined') === false || e.includes('\\') === false || e.includes('split') === false) {
+				var p = document.createElement('div')
+				document.getElementById('content').appendChild(p)
+				p.outerHTML = e
+			}
+		});
+	}
 }
-		
+				
