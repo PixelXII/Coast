@@ -1,4 +1,5 @@
 var posts = []
+var title, content;
 function Post(title, content) {
   if(title === undefined) {
     throw new Error('TITLE is undefined')
@@ -22,7 +23,11 @@ Post.prototype.edit = function() {
   // but i leave it here to remind me that i *want* to add it
 }
 
-function createPost(title, content) {
-  var np = new Post(title, content)
-  posts.push(np)
+document.getElementById('content').addEventListener('keypress', function(e) {
+	if(e.keyCode === 13) {
+		title = document.getElementById('title').value
+    content = document.getElementById('content').value
+    var np = new Post(title, content)
+    posts.push(np)
+  }
 }
