@@ -30,7 +30,7 @@ function changeImage() {
 
 function showPost() {
 	var p = document.getElementById('postD')
-	var c = document.getElementById('content')
+	var c = document.querySelectorAll('.postcard')
 	if(p.style.display === 'none') {
 		p.style.display = 'block'
 		c.style.display = 'none'
